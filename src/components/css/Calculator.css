@@ -1,0 +1,151 @@
+.calc {
+    /* background-color: rgb(35, 36, 45); */
+    height: 650px;
+    width: 300px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.color-button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: rgb(113,115,121);
+    font-size: 17px;
+}
+.color-mode {
+    height: 45px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(41,44,55);
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    top: 30px;
+    left: 95px;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+}
+
+#light-mode .color-mode {
+    height: 45px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(248,248,249);
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    top: 30px;
+    left: 95px;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+}
+
+.fa-moon {
+    transform: rotate(-20deg);
+}
+
+#light-mode .fa-moon {
+    transform: rotate(-20deg);
+}
+
+.fa-sun {
+    margin-right: 10px;
+}
+
+#light-mode .fa-sun {
+    margin-right: 10px;
+}
+
+.display {
+    background-color: rgb(35, 36, 45);
+    border-radius: 30px 30px 0px 0px;
+    height: 300px;
+    padding-bottom: -20px;
+    display: relative;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#light-mode .display {
+    background-color: rgb(255,255,255);
+    border-radius: 30px 30px 0px 0px;
+    height: 300px;
+    padding-bottom: -20px;
+    display: relative;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.current-display,
+.previous-display {
+    position: absolute;
+    font-size: 3.2rem;
+    color: white;
+    background-color: rgb(35, 36, 45);
+    letter-spacing: 3px;
+    margin-right: 15px;
+    margin-bottom: -15px;
+    
+}
+
+.previous-display {
+    color: rgb(210, 210, 210);
+}
+
+#light-mode .previous-display {
+    color: rgb(75,79,85);
+    background-color: white;
+}
+
+.current-display {
+    font-weight: bold;
+    right: 10px;
+    bottom: 390px;
+}
+
+#light-mode .current-display {
+    color: rgb(55,58,66); 
+    background-color: white;
+}
+
+.previous-display {
+    font-size: 1.4rem;
+    font-weight: 200;
+    right: 20px;
+    bottom: 470px;
+}
+
+.previous-display i {
+    font-size: 1rem; 
+    margin: 0px 5px 0px 5px;
+}
+.remote {
+    background-color: rgb(41, 44, 55);
+    display: grid;
+    z-index: 1;
+    gap: 3px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    height: 330px;
+    margin-top: -30px;
+    padding: 30px 10px 20px 10px;
+    border-radius: 35px;
+} 
+
+#light-mode .remote {
+    background: rgb(248,248,249);
+}
